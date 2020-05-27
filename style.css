@@ -7,14 +7,15 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: hsl(0, 0%, 98%);
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem;
+	font-family: 'Poppins', sans-serif;
+	background-color: hsl(0, 0%, 98%);
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem;
+	height: 100vh
 }
 
 #heading {
@@ -31,27 +32,28 @@ body {
 	color: hsl(234, 12%, 34%);
 	font-weight: 600;
 	font-size: 33px;
-	margin-top: 5px;
 }
 
 #heading p {
 	font-weight: 400;
-	font-size: 15px;
 	color: hsl(229, 6%, 66%);
 	text-align: center;
 	max-width: 550px;
+	opacity: 0.8;
+	font-size: 15px;
+	margin-top: 5px;
 }
 
 .card {
 	border-radius: 5px;
-	height: 200px;
+	height: 215px;
 	margin-top: 30px;
 	padding: 20px 30px;
 	background: white;
 	box-shadow: 0px 13px 40px -7px rgba(76,78,97,0.21);
 }
 
-.card h4 {
+.card h3 {
 	color: hsl(234, 12%, 34%);
 	font-weight: 600;
 	font-size: 22px;
@@ -59,13 +61,14 @@ body {
 
 .card p {
 	color: hsl(229, 6%, 66%);
-	font-size: 15px;
+	font-size: 13px;
 	max-width: 280px;
+	opacity: 0.8;
 }
 
 .card img {
-	margin-left: 84%;
-	margin-top: 6%;
+	margin-left: 81%;
+	margin-top: 14%;
 }
 
 .card#supervisor {
@@ -102,13 +105,18 @@ body {
 	body { padding: 2rem; }
 	.cards-container { flex-direction: column; }
 	.card { height: 213px; }
+	.card h3 { font-size: 17px; }
+	.card p { 
+		font-size: 13px;
+		margin-top: 5px; 
+	}
 	.card img { margin-left: 73%; margin-top: 5%; }
 
 	#heading { margin: 40px 0; }
 	#heading h1 { font-size: 24px; }
 	#heading h2 { font-size: 24px; }
 	#heading p {
-		font-size: 16px;
+		font-size: 15px;
 		margin: 0 19px;
 		margin-top: 18px;
 	}
