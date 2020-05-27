@@ -99,9 +99,9 @@ body {
 	align-items: center;
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 1100px) {
 	body { padding: 2rem; }
-	.card-grid { flex-direction: column; }
+	.card-grid { grid-template-columns: repeat(auto-fit, minmax(320px,auto)); }
 	.card { height: 213px; }
 	.card h3 { font-size: 17px; }
 	.card p { 
