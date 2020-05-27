@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -9,13 +7,11 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: hsl(0, 0%, 98%);
-	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 3rem;
-	height: 100vh
 }
 
 #heading {
@@ -42,6 +38,12 @@ body {
 	opacity: 0.8;
 	font-size: 15px;
 	margin-top: 5px;
+}
+
+.card-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 50px;
 }
 
 .card {
@@ -73,6 +75,7 @@ body {
 
 .card#supervisor {
 	border-top: 4px solid hsl(180, 62%, 55%);
+	align-self: center;
 }
 
 .card#team-builder {
@@ -85,13 +88,7 @@ body {
 
 .card#calculator {
 	border-top: 4px solid hsl(212, 86%, 64%);
-}
-
-.cards-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
+	align-self: center;
 }
 
 .cards-mid-section {
@@ -103,7 +100,7 @@ body {
 
 @media all and (max-width: 450px) {
 	body { padding: 2rem; }
-	.cards-container { flex-direction: column; }
+	.card-grid { flex-direction: column; }
 	.card { height: 213px; }
 	.card h3 { font-size: 17px; }
 	.card p { 
